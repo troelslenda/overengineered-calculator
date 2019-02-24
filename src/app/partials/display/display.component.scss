@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+.display {
+
+  overflow: hidden;
+  font-size: 2.5em; /* = 40px/16px */
+  line-height: 1.1em; /* = 44px/40px */
+  margin-bottom: 22px;
+
+  padding:20px;
+  border: 10px solid white;
+  background-color: yellow;
+  color: #333;
+  text-align: right;
+  font-family: Orbitron;
+}

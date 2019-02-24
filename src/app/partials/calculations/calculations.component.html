@@ -1,0 +1,12 @@
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let item of calculations | async">
+    <div>
+        <small class="text-muted">{{ item.createdAt.toDate() | date:'short' }}</small>
+    </div>
+    {{ item.calculation }}
+    <div>
+    <small class="text-muted">Resultat: {{ item.result }}</small>
+    <small class="text-muted"> - CF Resultat: {{ item.CFresult }}</small>
+  </div>
+  </li>
+</ul>

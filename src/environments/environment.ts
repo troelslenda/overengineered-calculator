@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: 'AIzaSyAKPsCloUBmGhDqp8TIAi_gkgZ6c9ZedEU',
+    authDomain: 'overengineered-calculator.firebaseapp.com',
+    databaseURL: 'https://overengineered-calculator.firebaseio.com',
+    projectId: 'overengineered-calculator',
+    storageBucket: 'overengineered-calculator.appspot.com',
+    messagingSenderId: '643011186727'
+  }
 };
 
 /*

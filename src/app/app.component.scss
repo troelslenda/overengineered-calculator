@@ -1,0 +1,14 @@
+:host {
+  display:flex;
+  flex-direction: row;
+}
+
+.calculator-wrapper {
+  flex-grow: 1;
+}
+
+app-calculator{
+  margin: 0 auto;
+  display: block;
+  max-width: 400px;
+}
