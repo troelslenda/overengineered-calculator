@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-//import { CalculatorService } from 'src/app/services/calculator.service';
+// import { CalculatorService } from 'src/app/services/calculator.service';
 import { CalculateService } from 'src/app/services/calculate.service';
 
 @Component({

@@ -18,7 +18,7 @@ Just for kicks, the calculation is done twice. Once on the client and afterwards
 * When using keyboard, no visible feedback on which button was "clicked"
 * Firestore is WIDE open, but this beeing a sandbox project with no billing, we will not adress this. Implementing authorization is out of scope.
 
-## Known bugs
+## Known bugs in [The CalculateService](src/app/services/calculate.service.ts)
 1. Leading zeroes (eval)
 2. double operators (eval)
 3. decimal has no restrictions (ui + eval)

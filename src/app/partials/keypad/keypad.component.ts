@@ -15,8 +15,8 @@ export class KeypadComponent implements OnInit {
     console.log(event.key);
     event.preventDefault();
     // Transform some keystrokes to calculator operators.
-    const key = event.key == 'Enter' ? '=' : event.key == 'Delete' ? 'ac' : event.key;
-    const el = this.elementRef.nativeElement.querySelector(`[data-key='${key}']`)
+    const key = event.key === 'Enter' ? '=' : event.key === 'Delete' ? 'ac' : event.key;
+    const el = this.elementRef.nativeElement.querySelector(`[data-key='${key}']`);
     if (el) {
       el.click();
     }
@@ -27,7 +27,7 @@ export class KeypadComponent implements OnInit {
   ngOnInit() {
     const buttons = this.elementRef.nativeElement.querySelectorAll('button');
     buttons.forEach((el: HTMLElement) => el.addEventListener('click', () => {
-      this.onKeypress.emit(el.dataset.key)
+      this.onKeypress.emit(el.dataset.key);
     }));
   }
 }
