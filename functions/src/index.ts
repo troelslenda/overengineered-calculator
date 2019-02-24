@@ -1,8 +1,10 @@
 import * as functions from 'firebase-functions';
 
-// // Start writing Firebase Functions
-// // https://firebase.google.com/docs/functions/typescript
-//
-// export const helloWorld = functions.https.onRequest((request, response) => {
-//  response.send("Hello from Firebase!");
-// });
+
+export const calculate = functions.firestore.document('calculations/{id}').onCreate(
+  (snapshot, context) =>
+    // do double calculation just because cloud functions
+    // are awesome - and to overengineer.
+    snapshot.ref.update({CFresult : eval(snapshot.data().calculation)})
+);
+

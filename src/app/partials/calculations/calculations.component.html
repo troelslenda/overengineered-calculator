@@ -6,7 +6,7 @@
     {{ item.calculation }}
     <div>
     <small class="text-muted">Resultat: {{ item.result }}</small>
-    <small class="text-muted"> - CF Resultat: {{ item.CFresult }}</small>
+    <small class="text-muted" *ngIf="item.CFresult"> - CF Resultat: {{ item.CFresult }}</small>
   </div>
   </li>
 </ul>
